@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 03:37:58 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/11 06:27:24 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/11 19:05:15 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Zombie::Zombie()
 
 Zombie::~Zombie()
 {
-	std::cout << "Destrucotr used for destroying: " << this->_name << std::endl;
+	std::cout << "Destructor used for destroying: " << this->_name << std::endl;
 }
 
 Zombie::Zombie(std::string name)

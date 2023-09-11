@@ -6,19 +6,19 @@
 #    By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/11 03:33:21 by jareste-          #+#    #+#              #
-#    Updated: 2023/09/11 06:26:37 by jareste-         ###   ########.fr        #
+#    Updated: 2023/09/11 19:16:30 by jareste-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Zombie
 
-SRCS = main.cpp randomChump.cpp Zombie.cpp newZombie.cpp
+SRCS = main.cpp Zombie.cpp zombieHorde.cpp
 
 HEADER = Zombie.h Zombie.hpp
 
 CC = c++
 RM = rm -f
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -g -fsanitize=address
+CFLAGS = -Wall -Wextra -Werror -std=c++98 #-g -fsanitize=address
 
 %.o: %.cpp Makefile ${HEADER}
 		@${CC} ${CFLAGS} -c $< -o $@

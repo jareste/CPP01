@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 03:37:34 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/11 06:26:51 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/11 18:50:42 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,6 @@ int	main(void)
 	zombie_test->anounce();
 
 	randomChump("Juan");
+	randomChump("Bob");
 	delete	zombie_test;
 }

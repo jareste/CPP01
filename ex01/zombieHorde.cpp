@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 06:28:32 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/11 06:28:52 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/11 19:28:46 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,12 @@
 
 Zombie* zombieHorde( int N, std::string name )
 {
-	
+	Zombie	*zombie = new Zombie[N];
+
+
+	for (int i = 0; i < N; i++)
+	{
+		zombie[i].zombie_name(name);
+	}
+	return (zombie);
 }
