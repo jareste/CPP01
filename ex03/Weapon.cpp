@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 23:12:14 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/12 00:44:00 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/12 01:03:51 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ Weapon::Weapon(std::string _type)
 	type = _type;
 }
 
-std::string	Weapon::getType(void)
+const std::string	Weapon::getType() const
 {
 	return (type);
 }

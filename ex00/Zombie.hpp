@@ -6,11 +6,14 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 03:37:49 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/11 06:26:25 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/12 00:56:50 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.h"
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
+
+# include "Zombie.h"
 
 class Zombie
 {
@@ -23,3 +26,5 @@ class Zombie
 	private:
 		std::string		_name;
 };
+
+#endif

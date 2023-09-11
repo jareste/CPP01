@@ -6,11 +6,14 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 23:13:21 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/12 00:41:42 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/12 01:04:13 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanB.h"
+#ifndef WEAPON_H
+# define WEAPON_H
+
+# include "HumanB.h"
 
 class Weapon
 {
@@ -19,8 +22,10 @@ class Weapon
 		~Weapon();
 		Weapon(std::string _type);
 		void			setType(std::string _type);
-		std::string		getType(void);
+		const std::string		getType() const;
 
 	private:
 		std::string		type;
 };
+
+#endif
