@@ -6,15 +6,15 @@
 #    By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/12 00:57:09 by jareste-          #+#    #+#              #
-#    Updated: 2023/09/13 23:29:35 by jareste-         ###   ########.fr        #
+#    Updated: 2023/09/14 02:13:43 by jareste-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Sed_is_for_losers
+NAME = Harl
 
-SRCS = main.cpp 
+SRCS = main.cpp Harl.cpp
 
-HEADER = Sed.h
+HEADER = Harl.h Harl.hpp 
 
 CC = c++
 RM = rm -f
@@ -46,4 +46,3 @@ re:
 			@$(MAKE) all --no-print-directory
 
 .PHONY: all clean fclean re
-
