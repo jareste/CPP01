@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 23:58:54 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/14 02:22:27 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/14 02:23:50 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,33 +33,38 @@ void	Harl::complain(std::string level)
 	{
 		if (ftab[n] == level)
 		{
-			(this->*f[n])();
+			while (n < 4)
+			{
+				(this->*f[n])();
+				n++;
+			}
 			return ;
 		}
 	}
+	std::cout << "It would be great if you could complain about something relevant please." << std::endl;
 	return ;
 }
 
 void	Harl::debug(void)
 {
-	std::cout << "DEBUG" << std::endl;
+	std::cout << "[ DEBUG ]" << std::endl;
 	std::cout << DEBUG << std::endl;
 }
 
 void	Harl::info(void)
 {
-	std::cout << "INFO" << std::endl;
+	std::cout << "[ INFO ]" << std::endl;
 	std::cout << INFO << std::endl;
 }
 
 void	Harl::warning(void)
 {
-	std::cout << "WARNING" << std::endl;
+	std::cout << "[ WARNING ]" << std::endl;
 	std::cout << WARNING << std::endl;
 }
 
 void	Harl::error(void)
 {
-	std::cout << "ERROR" << std::endl;
+	std::cout << "[ ERROR ]" << std::endl;
 	std::cout << ERROR << std::endl;
 }

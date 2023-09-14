@@ -6,11 +6,11 @@
 #    By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/12 00:57:09 by jareste-          #+#    #+#              #
-#    Updated: 2023/09/14 02:17:30 by jareste-         ###   ########.fr        #
+#    Updated: 2023/09/14 02:17:37 by jareste-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Harl
+NAME = harlFilter
 
 SRCS = main.cpp Harl.cpp
 

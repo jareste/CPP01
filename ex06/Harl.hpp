@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/13 23:58:42 by jareste-          #+#    #+#             */
-/*   Updated: 2023/09/14 02:23:53 by jareste-         ###   ########.fr       */
+/*   Created: 2023/09/13 23:59:04 by jareste-          #+#    #+#             */
+/*   Updated: 2023/09/14 02:04:59 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.h"
+#ifndef HARL_HPP
+# define HARL_HPP
 
-int	main(void)
+# include "Harl.hpp"
+
+class Harl
 {
-	Harl	harl;
+	public:
+		Harl();
+		~Harl();
+		void	complain(std::string level);
+	private:
+		void	debug(void);
+		void	info(void);
+		void	warning(void);
+		void	error(void);
+};
 
-	harl.complain("DEBUG");
-	harl.complain("INFO");
-	harl.complain("WARNING");
-	harl.complain("ERROR");
-
-	std::cout << std::endl << "NO MESSAGE" << std::endl;
-	harl.complain("no");
-	return (0);
-}
+#endif
